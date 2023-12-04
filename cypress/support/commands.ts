@@ -42,7 +42,13 @@ declare namespace Cypress{
          * Navigates to the home page
          */
         visitHomePage(): Chainable<Element>
+        /**
+         * Navigates to the About page of the app
+         */
         visitAboutPage(): Chainable<Element>
+        /**
+         * Navigates to the Carousel page of the app
+         */
         visitCarouselPage():Chainable<Element>
     }
 }

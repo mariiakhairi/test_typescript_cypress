@@ -35,3 +35,21 @@
 //     }
 //   }
 // }
+
+declare namespace Cypress{
+    interface Chainable{
+        visitHomePage(): Chainable<Element>
+        visitAboutPage(): Chainable<Element>
+        visitCarouselPage():Chainable<Element>
+    }
+}
+Cypress.Commands.add('visitHomePage',() =>{
+    cy.visit("https://practice-automation.com/")
+})
+
+Cypress.Commands.add('visitAboutPage',() =>{
+    cy.visit("https://automatenow.io/about/")
+})
+Cypress.Commands.add('visitCarouselPage',() =>{
+    cy.visit("https://practice-automation.com/carousel/")
+})

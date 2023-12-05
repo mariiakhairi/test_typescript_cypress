@@ -50,6 +50,10 @@ declare namespace Cypress{
          * Navigates to the Carousel page of the app
          */
         visitCarouselPage():Chainable<Element>
+        /**
+         * Navigates to the Login page of the app
+         */
+        visitLoginPage():Chainable<Element>
     }
 }
 Cypress.Commands.add('visitHomePage',() =>{
@@ -61,4 +65,7 @@ Cypress.Commands.add('visitAboutPage',() =>{
 })
 Cypress.Commands.add('visitCarouselPage',() =>{
     cy.visit("https://practice-automation.com/carousel/")
+})
+Cypress.Commands.add('visitLoginPage',() =>{
+    cy.visit("https://account.xrite.com/Account/Login")
 })

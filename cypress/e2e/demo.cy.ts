@@ -1,3 +1,5 @@
+/// <reference types="cypress"/>
+
 describe('Exhamples of the simple tests', () => {
   it('Sould login to the app', () => {
     cy.visitLoginPage()

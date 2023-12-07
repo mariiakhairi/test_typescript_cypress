@@ -7,9 +7,10 @@ export default defineConfig({
   watchForFileChanges:false,
   env:{
     email:"test@mailinator.com",
-    password:"zKYN$2SVxgGy2p7",
+    password:"Test1234*",
   },
   e2e: {
+    specPattern: 'cypress/e2e/*.cy.ts',	
     setupNodeEvents(on, config) {
       // implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on)

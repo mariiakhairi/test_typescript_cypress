@@ -8,7 +8,9 @@ declare namespace Cypress{
     }  
 }
 Cypress.Commands.add("login", (username, password) =>{
-    cy.get("#Username").type(username)
-    cy.get("Password").type(password)
-    cy.get("login-button").click()
+    cy.get('#input-email').type(username)
+    cy.get('[data-testid="CookieBanner-AcceptCookiesButton"]').click()
+    cy.get('[data-testid="LoginFormEmail-ContinueButton"]').click()
+    cy.get('.sc-iyLcWo > input').type(password)
+    cy.get('[data-testid="LoginFormPassword-ContinueButton"]').click()
 })

@@ -67,9 +67,5 @@ Cypress.Commands.add('visitCarouselPage',() =>{
     cy.visit("https://practice-automation.com/carousel/")
 })
 Cypress.Commands.add('visitLoginPage' ,()=>{
-    cy.visit("https://account.xrite.com/Account/Login/",{failOnStatusCode: false}).then(($selectedElement) => {
-        // Debugger is hit after the cy.visit
-        // and cy.get commands have completed
-        debugger
-      })
+    cy.visit("https://www.perlego.com/login")
 })

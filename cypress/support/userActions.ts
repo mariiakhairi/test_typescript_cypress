@@ -22,3 +22,11 @@ Cypress.Commands.add("login", (username, password) =>{
     cy.get('.sc-iyLcWo > input').type(password)
     cy.get('[data-testid="LoginFormPassword-ContinueButton"]').click()
 })
+
+Cypress.Commands.add("submitFeetback", (name, email, subject, message) =>{
+    cy.get('#name').type(name)
+    cy.get('#email').type(email)
+    cy.get('#subject').type(subject)
+    cy.get('#comment').type(message)
+    cy.get('[name="submit"]').click()
+})

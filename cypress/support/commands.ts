@@ -45,7 +45,7 @@ declare namespace Cypress{
         /**
          * Navigates to the About page of the app
          */
-        visitAboutPage(): Chainable<Element>
+        visitFeedbackPage(): Chainable<Element>
         /**
          * Navigates to the Carousel page of the app
          */
@@ -60,8 +60,8 @@ Cypress.Commands.add('visitHomePage',() =>{
     cy.visit("https://practice-automation.com/")
 })
 
-Cypress.Commands.add('visitAboutPage',() =>{
-    cy.visit("https://automatenow.io/about/")
+Cypress.Commands.add('visitFeedbackPage',() =>{
+    cy.visit("http://zero.webappsecurity.com/feedback.html")
 })
 Cypress.Commands.add('visitCarouselPage',() =>{
     cy.visit("https://practice-automation.com/carousel/")

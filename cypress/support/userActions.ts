@@ -5,6 +5,14 @@ declare namespace Cypress{
          * @param username - takes user password
         */
         login(username:string, password:string):Chainable<Element>
+        /**
+         * 
+         * @param name - test user name
+         * @param email - test user email
+         * @param subject - test user subject
+         * @param message - test user message
+         */
+        submitFeetback(name: string, email: string, subject:string, message:string): Chainable<Element>
     }  
 }
 Cypress.Commands.add("login", (username, password) =>{

@@ -54,6 +54,11 @@ declare namespace Cypress {
 		 * Navigates to the Login page of the app
 		 */
 		visitLoginPage(): Chainable<Element>
+		/**
+		 * 
+		 * @param seconds - how many seconds 
+		 */
+		waitForSeconds(seconds:number): Chainable<Element>
 	}
 }
 Cypress.Commands.add('visitHomePage', () => {
@@ -68,4 +73,7 @@ Cypress.Commands.add('visitCarouselPage', () => {
 })
 Cypress.Commands.add('visitLoginPage', () => {
 	cy.visit('https://www.perlego.com/login')
+})
+Cypress.Commands.add('waitForSeconds', (number) => {
+	cy.wait(number)
 })

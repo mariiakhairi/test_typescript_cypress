@@ -36,36 +36,36 @@
 //   }
 // }
 
-declare namespace Cypress{
-    interface Chainable{
-        /**
-         * Navigates to the home page
-         */
-        visitHomePage(): Chainable<Element>
-        /**
-         * Navigates to the About page of the app
-         */
-        visitFeedbackPage(): Chainable<Element>
-        /**
-         * Navigates to the Carousel page of the app
-         */
-        visitCarouselPage():Chainable<Element>
-        /**
-         * Navigates to the Login page of the app
-         */
-        visitLoginPage():Chainable<Element>
-    }
+declare namespace Cypress {
+	interface Chainable {
+		/**
+		 * Navigates to the home page
+		 */
+		visitHomePage(): Chainable<Element>
+		/**
+		 * Navigates to the About page of the app
+		 */
+		visitFeedbackPage(): Chainable<Element>
+		/**
+		 * Navigates to the Carousel page of the app
+		 */
+		visitCarouselPage(): Chainable<Element>
+		/**
+		 * Navigates to the Login page of the app
+		 */
+		visitLoginPage(): Chainable<Element>
+	}
 }
-Cypress.Commands.add('visitHomePage',() =>{
-    cy.visit("https://practice-automation.com/")
+Cypress.Commands.add('visitHomePage', () => {
+	cy.visit('https://practice-automation.com/')
 })
 
-Cypress.Commands.add('visitFeedbackPage',() =>{
-    cy.visit("http://zero.webappsecurity.com/feedback.html")
+Cypress.Commands.add('visitFeedbackPage', () => {
+	cy.visit('http://zero.webappsecurity.com/feedback.html')
 })
-Cypress.Commands.add('visitCarouselPage',() =>{
-    cy.visit("https://practice-automation.com/carousel/")
+Cypress.Commands.add('visitCarouselPage', () => {
+	cy.visit('https://practice-automation.com/carousel/')
 })
-Cypress.Commands.add('visitLoginPage' ,()=>{
-    cy.visit("https://www.perlego.com/login")
+Cypress.Commands.add('visitLoginPage', () => {
+	cy.visit('https://www.perlego.com/login')
 })
